@@ -6,3 +6,11 @@
     display: inline;
     margin: 50px;
 }
+
+.title{
+    padding: 20px;
+}
+
+header{
+    background-color: #99cc00;
+}
