@@ -226,20 +226,6 @@ body {
     border-radius: 25px;
 }
 
-/* Footer */
-.footer-section {
-    background: #333;
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.footer-section p {
-    margin: 0;
-    opacity: 0.8;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
     .hero-content h1 {
