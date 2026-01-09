@@ -144,6 +144,57 @@ body {
     text-align: center;
 }
 
+/* Hero Koiキャラ */
+.hero-koichara {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+    padding: 12px 20px 12px 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--md-shape-full);
+    text-decoration: none;
+    transition: all var(--md-motion-duration-medium) var(--md-motion-easing-emphasized);
+}
+
+.hero-koichara:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(236, 72, 153, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 32px rgba(236, 72, 153, 0.3);
+}
+
+.hero-koichara img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(236, 72, 153, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-koichara-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.hero-koichara-badge {
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: #F9A8D4;
+    letter-spacing: 0.5px;
+}
+
+.hero-koichara-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
 .hero-label {
     display: inline-block;
     background: rgba(255, 255, 255, 0.1);
