@@ -264,6 +264,11 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
+.social-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 /* Main Content */
 .main-content {
     max-width: 1000px;
