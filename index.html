@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kohei Ikezu - Mobile Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,269 +16,230 @@
         <i class="fas fa-tools"></i> Under Construction
     </div>
 
-    <div class="container-fluid px-0">
-        <!-- Header -->
-        <header class="hero-section">
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-container">
             <div class="hero-content">
-                <h1>Kohei Ikezu</h1>
-                <p class="lead">Mobile Engineer @ Tapple, Inc. (CyberAgent Group)</p>
-                <p class="location"><i class="fas fa-map-marker-alt"></i> Japan</p>
+                <span class="hero-label">Mobile Engineer</span>
+                <h1 class="hero-title">Kohei Ikezu</h1>
+                <p class="hero-subtitle">Tapple, Inc. (CyberAgent Group)</p>
+                <div class="hero-location">
+                    <i class="fas fa-map-marker-alt"></i> Japan
+                </div>
                 <div class="social-links">
-                    <a href="https://github.com/zoothezoo" target="_blank" class="social-icon">
+                    <a href="https://github.com/zoothezoo" target="_blank" class="social-fab">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://x.com/times_zoothezoo" target="_blank" class="social-icon">
+                    <a href="https://x.com/times_zoothezoo" target="_blank" class="social-fab">
                         <i class="fab fa-x-twitter"></i>
                     </a>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <main class="container py-5">
-            <!-- Skills Section -->
-            <section class="mb-5">
-                <h2 class="section-title">Skills</h2>
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title"><i class="fas fa-code"></i> Languages</h5>
-                                <div class="skill-tags">
-                                    <span class="badge badge-primary">Kotlin</span>
-                                    <span class="badge badge-primary">Dart</span>
-                                    <span class="badge badge-primary">Java</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="card h-100 shadow-sm">
-                            <div class="card-body">
-                                <h5 class="card-title"><i class="fas fa-tools"></i> Frameworks & Tools</h5>
-                                <div class="skill-tags">
-                                    <span class="badge badge-success">Android</span>
-                                    <span class="badge badge-success">Jetpack Compose</span>
-                                    <span class="badge badge-success">Flutter</span>
-                                    <span class="badge badge-success">Firebase</span>
-                                    <span class="badge badge-success">GitHub Actions</span>
-                                </div>
-                            </div>
-                        </div>
+    <main class="main-content">
+        <!-- Skills Section -->
+        <section class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <h3 class="card-title">Languages</h3>
+                    <div class="chip-group">
+                        <span class="chip">Kotlin</span>
+                        <span class="chip">Dart</span>
+                        <span class="chip">Java</span>
                     </div>
                 </div>
-            </section>
-
-            <!-- Specializations Section -->
-            <section class="mb-5">
-                <h2 class="section-title">Specializations</h2>
-                <div class="row">
-                    <div class="col-md-6 col-lg-3 mb-3">
-                        <div class="spec-card">
-                            <i class="fab fa-android"></i>
-                            <p>Android/Flutter Development</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-3">
-                        <div class="spec-card">
-                            <i class="fas fa-layer-group"></i>
-                            <p>MVVM & Clean Architecture</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-3">
-                        <div class="spec-card">
-                            <i class="fas fa-cubes"></i>
-                            <p>Multi-module Architecture</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-3">
-                        <div class="spec-card">
-                            <i class="fas fa-mobile-alt"></i>
-                            <p>Cross-platform Development</p>
-                        </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fas fa-wrench"></i></div>
+                    <h3 class="card-title">Frameworks & Tools</h3>
+                    <div class="chip-group">
+                        <span class="chip secondary">Android</span>
+                        <span class="chip secondary">Jetpack Compose</span>
+                        <span class="chip secondary">Flutter</span>
+                        <span class="chip secondary">Firebase</span>
+                        <span class="chip secondary">GitHub Actions</span>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Projects Section -->
-            <section class="mb-5">
-                <h2 class="section-title">Projects</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <a href="https://tapple.me/" target="_blank" class="project-link">
-                            <div class="card project-card h-100 shadow-sm">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title mb-0">tapple</h5>
-                                    <i class="fas fa-external-link-alt project-icon"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <a href="https://koigram.net/" target="_blank" class="project-link">
-                            <div class="card project-card h-100 shadow-sm">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title mb-0">Koigram</h5>
-                                    <i class="fas fa-external-link-alt project-icon"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <a href="https://koigram.net/koichara/" target="_blank" class="project-link">
-                            <div class="card project-card h-100 shadow-sm">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title mb-0">Koiキャラメーカー</h5>
-                                    <i class="fas fa-external-link-alt project-icon"></i>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+        <!-- Specializations Section -->
+        <section class="section">
+            <h2 class="section-title">Specializations</h2>
+            <div class="spec-grid">
+                <div class="spec-item">
+                    <div class="spec-icon"><i class="fab fa-android"></i></div>
+                    <span>Android/Flutter</span>
                 </div>
-            </section>
-
-            <!-- Slides Section -->
-            <section class="mb-5">
-                <h2 class="section-title"><i class="fas fa-chalkboard"></i> Slides</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <a href="https://speakerdeck.com/zoothezoo/figma-dev-mode-mcp-serverwoyong-itauikai-fa" target="_blank" class="ogp-card">
-                            <div class="ogp-image" style="background-image: url('https://files.speakerdeck.com/presentations/091c8906cc2d47a7bc712aa5006eb11e/preview_slide_0.jpg');">
-                                <span class="ogp-badge">SpeakerDeck</span>
-                            </div>
-                            <div class="ogp-content">
-                                <h5>Figma Dev Mode MCP Serverを用いたUI開発</h5>
-                                <span class="item-date">2025.07</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <a href="https://speakerdeck.com/zoothezoo/androidkai-fa-tipsgong-you-hui" target="_blank" class="ogp-card">
-                            <div class="ogp-image" style="background-image: url('https://files.speakerdeck.com/presentations/a152f888eed94625ae59fccf46e79818/preview_slide_0.jpg');">
-                                <span class="ogp-badge">SpeakerDeck</span>
-                            </div>
-                            <div class="ogp-content">
-                                <h5>potatotips #74 iOS/Android開発Tips共有会</h5>
-                                <span class="item-date">2021</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <a href="https://speakerdeck.com/zoothezoo/jiu-huo-cheng-gong-falsemi-jue" target="_blank" class="ogp-card">
-                            <div class="ogp-image" style="background-image: url('https://files.speakerdeck.com/presentations/05a3c72e77934aa78db287070c7f8f53/preview_slide_0.jpg');">
-                                <span class="ogp-badge">SpeakerDeck</span>
-                            </div>
-                            <div class="ogp-content">
-                                <h5>就活成功の秘訣</h5>
-                                <span class="item-date">2019</span>
-                            </div>
-                        </a>
-                    </div>
+                <div class="spec-item">
+                    <div class="spec-icon"><i class="fas fa-layer-group"></i></div>
+                    <span>MVVM & Clean Architecture</span>
                 </div>
-            </section>
-
-            <!-- Articles Section -->
-            <section class="mb-5">
-                <h2 class="section-title"><i class="fas fa-pen-fancy"></i> Articles</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <a href="https://qiita.com/zoothezoo/items/cff6c3e8cc2fbcba791b" target="_blank" class="ogp-card">
-                            <div class="ogp-image qiita-ogp">
-                                <i class="fas fa-bell qiita-icon-large"></i>
-                                <span class="ogp-badge qiita">Qiita</span>
-                            </div>
-                            <div class="ogp-content">
-                                <h5>【FCM】AndroidのChannel管理の際にハマった話</h5>
-                                <span class="item-date">2021.06</span>
-                                <div class="article-tags">
-                                    <span>Android</span>
-                                    <span>Kotlin</span>
-                                    <span>FCM</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <a href="https://qiita.com/zoothezoo/items/487c3c90869658448307" target="_blank" class="ogp-card">
-                            <div class="ogp-image qiita-ogp">
-                                <i class="fas fa-layer-group qiita-icon-large"></i>
-                                <span class="ogp-badge qiita">Qiita</span>
-                            </div>
-                            <div class="ogp-content">
-                                <h5>初めてGroupieを使ったからまとめました</h5>
-                                <span class="item-date">2020.05</span>
-                                <div class="article-tags">
-                                    <span>Android</span>
-                                    <span>Kotlin</span>
-                                    <span>Groupie</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <a href="https://qiita.com/zoothezoo/items/b510c2eccfee8ab0693d" target="_blank" class="ogp-card">
-                            <div class="ogp-image qiita-ogp">
-                                <i class="fas fa-user qiita-icon-large"></i>
-                                <span class="ogp-badge qiita">Qiita</span>
-                            </div>
-                            <div class="ogp-content">
-                                <h5>プロフィール画面で見るアレやってみたい(CoordinatorLayout)</h5>
-                                <span class="item-date">2019.12</span>
-                                <div class="article-tags">
-                                    <span>Android</span>
-                                    <span>Kotlin</span>
-                                    <span>CoordinatorLayout</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="spec-item">
+                    <div class="spec-icon"><i class="fas fa-cubes"></i></div>
+                    <span>Multi-module</span>
                 </div>
-            </section>
+                <div class="spec-item">
+                    <div class="spec-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <span>Cross-platform</span>
+                </div>
+            </div>
+        </section>
 
-            <!-- GitHub Stats Section -->
-            <section class="mb-5">
-                <h2 class="section-title">GitHub Stats</h2>
-                <div class="row text-center">
-                    <div class="col-6 col-md-3 mb-3">
-                        <div class="stat-box">
-                            <h3>18</h3>
-                            <p>Repositories</p>
+        <!-- Projects Section -->
+        <section class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <a href="https://tapple.me/" target="_blank" class="project-card">
+                    <span class="project-name">tapple</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://koigram.net/" target="_blank" class="project-card secondary">
+                    <span class="project-name">Koigram</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://koigram.net/koichara/" target="_blank" class="project-card tertiary">
+                    <span class="project-name">Koiキャラメーカー</span>
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                </a>
+            </div>
+
+            <!-- My Koiキャラ -->
+            <a href="https://koigram.net/koichara/diagnosis/result/s22or99u9s1u" target="_blank" class="koichara-card">
+                <div class="koichara-image">
+                    <img src="assets/zoothezoo_koichara.png" alt="おしゃべり先走りうっかりカワウソ">
+                </div>
+                <div class="koichara-content">
+                    <span class="koichara-label">My Koiキャラ</span>
+                    <h3 class="koichara-name">おしゃべり先走り<br>うっかりカワウソ</h3>
+                    <span class="koichara-link">診断結果を見る <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </a>
+        </section>
+
+        <!-- Slides Section -->
+        <section class="section">
+            <h2 class="section-title">Slides</h2>
+            <div class="content-grid">
+                <a href="https://speakerdeck.com/zoothezoo/figma-dev-mode-mcp-serverwoyong-itauikai-fa" target="_blank" class="content-card">
+                    <div class="content-image" style="background-image: url('https://files.speakerdeck.com/presentations/091c8906cc2d47a7bc712aa5006eb11e/preview_slide_0.jpg');">
+                        <span class="content-badge">SpeakerDeck</span>
+                    </div>
+                    <div class="content-body">
+                        <h3>Figma Dev Mode MCP Serverを用いたUI開発</h3>
+                        <span class="content-date">2025.07</span>
+                    </div>
+                </a>
+                <a href="https://speakerdeck.com/zoothezoo/androidkai-fa-tipsgong-you-hui" target="_blank" class="content-card">
+                    <div class="content-image" style="background-image: url('https://files.speakerdeck.com/presentations/a152f888eed94625ae59fccf46e79818/preview_slide_0.jpg');">
+                        <span class="content-badge">SpeakerDeck</span>
+                    </div>
+                    <div class="content-body">
+                        <h3>potatotips #74 iOS/Android開発Tips共有会</h3>
+                        <span class="content-date">2021</span>
+                    </div>
+                </a>
+                <a href="https://speakerdeck.com/zoothezoo/jiu-huo-cheng-gong-falsemi-jue" target="_blank" class="content-card">
+                    <div class="content-image" style="background-image: url('https://files.speakerdeck.com/presentations/05a3c72e77934aa78db287070c7f8f53/preview_slide_0.jpg');">
+                        <span class="content-badge">SpeakerDeck</span>
+                    </div>
+                    <div class="content-body">
+                        <h3>就活成功の秘訣</h3>
+                        <span class="content-date">2019</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Articles Section -->
+        <section class="section">
+            <h2 class="section-title">Articles</h2>
+            <div class="content-grid">
+                <a href="https://qiita.com/zoothezoo/items/cff6c3e8cc2fbcba791b" target="_blank" class="content-card">
+                    <div class="content-image qiita">
+                        <i class="fas fa-bell"></i>
+                        <span class="content-badge qiita">Qiita</span>
+                    </div>
+                    <div class="content-body">
+                        <h3>【FCM】AndroidのChannel管理の際にハマった話</h3>
+                        <span class="content-date">2021.06</span>
+                        <div class="chip-group small">
+                            <span class="chip outline">Android</span>
+                            <span class="chip outline">Kotlin</span>
+                            <span class="chip outline">FCM</span>
                         </div>
                     </div>
-                    <div class="col-6 col-md-3 mb-3">
-                        <div class="stat-box">
-                            <h3>90</h3>
-                            <p>Stars</p>
+                </a>
+                <a href="https://qiita.com/zoothezoo/items/487c3c90869658448307" target="_blank" class="content-card">
+                    <div class="content-image qiita">
+                        <i class="fas fa-layer-group"></i>
+                        <span class="content-badge qiita">Qiita</span>
+                    </div>
+                    <div class="content-body">
+                        <h3>初めてGroupieを使ったからまとめました</h3>
+                        <span class="content-date">2020.05</span>
+                        <div class="chip-group small">
+                            <span class="chip outline">Android</span>
+                            <span class="chip outline">Kotlin</span>
+                            <span class="chip outline">Groupie</span>
                         </div>
                     </div>
-                    <div class="col-6 col-md-3 mb-3">
-                        <div class="stat-box">
-                            <h3>28</h3>
-                            <p>Followers</p>
+                </a>
+                <a href="https://qiita.com/zoothezoo/items/b510c2eccfee8ab0693d" target="_blank" class="content-card">
+                    <div class="content-image qiita">
+                        <i class="fas fa-user"></i>
+                        <span class="content-badge qiita">Qiita</span>
+                    </div>
+                    <div class="content-body">
+                        <h3>プロフィール画面で見るアレやってみたい(CoordinatorLayout)</h3>
+                        <span class="content-date">2019.12</span>
+                        <div class="chip-group small">
+                            <span class="chip outline">Android</span>
+                            <span class="chip outline">Kotlin</span>
                         </div>
                     </div>
-                    <div class="col-6 col-md-3 mb-3">
-                        <div class="stat-box">
-                            <h3>42</h3>
-                            <p>Following</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </a>
+            </div>
+        </section>
 
-            <!-- Achievements Section -->
-            <section class="mb-5">
-                <h2 class="section-title">GitHub Achievements</h2>
-                <div class="achievements">
-                    <span class="badge badge-warning achievement-badge">Pair Extraordinaire x3</span>
-                    <span class="badge badge-warning achievement-badge">Pull Shark x4</span>
-                    <span class="badge badge-warning achievement-badge">YOLO</span>
-                    <span class="badge badge-warning achievement-badge">Quickdraw</span>
-                    <span class="badge badge-warning achievement-badge">Arctic Code Vault Contributor</span>
+        <!-- GitHub Stats Section -->
+        <section class="section">
+            <h2 class="section-title">GitHub Stats</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-value">18</span>
+                    <span class="stat-label">Repositories</span>
                 </div>
-            </section>
-        </main>
+                <div class="stat-card">
+                    <span class="stat-value">90</span>
+                    <span class="stat-label">Stars</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">28</span>
+                    <span class="stat-label">Followers</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-value">42</span>
+                    <span class="stat-label">Following</span>
+                </div>
+            </div>
+        </section>
 
-    </div>
+        <!-- Achievements Section -->
+        <section class="section">
+            <h2 class="section-title">Achievements</h2>
+            <div class="chip-group achievements">
+                <span class="chip achievement"><i class="fas fa-star"></i> Pair Extraordinaire x3</span>
+                <span class="chip achievement"><i class="fas fa-star"></i> Pull Shark x4</span>
+                <span class="chip achievement"><i class="fas fa-star"></i> YOLO</span>
+                <span class="chip achievement"><i class="fas fa-star"></i> Quickdraw</span>
+                <span class="chip achievement"><i class="fas fa-star"></i> Arctic Code Vault</span>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
