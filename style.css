@@ -426,18 +426,19 @@ body {
     gap: 12px;
 }
 
+/* tapple: Coral/Pink (アイコンのピンク系) */
 .project-card {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 24px 28px;
-    background: var(--gradient-primary);
+    background: linear-gradient(135deg, #FF7085 0%, #FF8A9B 50%, #FFA5B4 100%);
     color: white;
     border-radius: var(--md-shape-xl);
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
-    box-shadow: 0 4px 20px rgba(124, 58, 237, 0.3);
+    box-shadow: 0 4px 20px rgba(255, 112, 133, 0.3);
     transition: all var(--md-motion-duration-medium) var(--md-motion-easing-emphasized);
     position: relative;
     overflow: hidden;
@@ -450,31 +451,33 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%);
+    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 50%);
     pointer-events: none;
 }
 
 .project-card:hover {
     transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 12px 40px rgba(124, 58, 237, 0.4);
+    box-shadow: 0 12px 40px rgba(255, 112, 133, 0.4);
 }
 
+/* Koigram: Purple (アイコンの紫) */
 .project-card.secondary {
-    background: var(--gradient-secondary);
-    box-shadow: 0 4px 20px rgba(13, 148, 136, 0.3);
+    background: linear-gradient(135deg, #7E57C2 0%, #9575CD 50%, #B39DDB 100%);
+    box-shadow: 0 4px 20px rgba(126, 87, 194, 0.35);
 }
 
 .project-card.secondary:hover {
-    box-shadow: 0 12px 40px rgba(13, 148, 136, 0.4);
+    box-shadow: 0 12px 40px rgba(126, 87, 194, 0.45);
 }
 
+/* Koiキャラメーカー: Magenta/Pink (アイコンのピンク) */
 .project-card.tertiary {
-    background: var(--gradient-warm);
-    box-shadow: 0 4px 20px rgba(236, 72, 153, 0.3);
+    background: linear-gradient(135deg, #EC407A 0%, #F06292 50%, #F48FB1 100%);
+    box-shadow: 0 4px 20px rgba(236, 64, 122, 0.35);
 }
 
 .project-card.tertiary:hover {
-    box-shadow: 0 12px 40px rgba(236, 72, 153, 0.4);
+    box-shadow: 0 12px 40px rgba(236, 64, 122, 0.45);
 }
 
 .project-card i {
