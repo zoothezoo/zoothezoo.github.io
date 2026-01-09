@@ -192,88 +192,96 @@ body {
     transform: translate(3px, -3px);
 }
 
-/* Slides & Articles Section */
-.talks-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.talk-item {
-    display: flex;
-    align-items: center;
-    padding: 20px 24px;
+/* OGP Cards */
+.ogp-card {
+    display: block;
     background: white;
     border-radius: 12px;
-    text-decoration: none;
+    overflow: hidden;
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     transition: all 0.3s ease;
-    border-left: 4px solid #667eea;
+    text-decoration: none;
+    height: 100%;
 }
 
-.talk-item:hover {
-    transform: translateX(8px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+.ogp-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
     text-decoration: none;
 }
 
-.article-item {
-    border-left-color: #55c500;
+.ogp-image {
+    height: 160px;
+    background-size: cover;
+    background-position: center;
+    background-color: #667eea;
+    position: relative;
 }
 
-.talk-content {
-    flex: 1;
+.qiita-ogp {
+    background: linear-gradient(135deg, #55c500 0%, #3ea800 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.talk-content h5 {
-    margin: 0;
-    color: #333;
-    font-size: 1rem;
+.qiita-icon-large {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.ogp-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.7rem;
     font-weight: 600;
+}
+
+.ogp-badge.qiita {
+    background: #55c500;
+}
+
+.ogp-content {
+    padding: 16px;
+}
+
+.ogp-content h5 {
+    margin: 0 0 8px 0;
+    color: #333;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .item-date {
     display: inline-block;
-    margin-top: 6px;
     font-size: 0.8rem;
     color: #999;
 }
 
-.article-meta {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-top: 8px;
-    flex-wrap: wrap;
-}
-
 .article-tags {
     display: flex;
-    gap: 8px;
+    gap: 6px;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .article-tags span {
-    font-size: 0.7rem;
-    padding: 3px 10px;
+    font-size: 0.65rem;
+    padding: 3px 8px;
     background: #f0f0f0;
     color: #666;
     border-radius: 20px;
-}
-
-.talk-arrow {
-    color: #ccc;
-    font-size: 0.9rem;
-    transition: all 0.3s ease;
-}
-
-.talk-item:hover .talk-arrow {
-    color: #667eea;
-    transform: translateX(5px);
-}
-
-.article-item:hover .talk-arrow {
-    color: #55c500;
 }
 
 /* Stats Box */
