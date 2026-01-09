@@ -371,6 +371,7 @@ body {
     color: #92400E;
     border-radius: var(--md-shape-full);
     border: 1px solid #FCD34D;
+    text-decoration: none;
 }
 
 .chip.achievement i {
@@ -678,6 +679,8 @@ body {
     text-align: center;
     transition: all var(--md-motion-duration-medium) var(--md-motion-easing-emphasized);
     border: 1px solid var(--md-outline-variant);
+    text-decoration: none;
+    display: block;
 }
 
 .stat-card:hover {
