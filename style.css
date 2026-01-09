@@ -1,19 +1,248 @@
 * {
-    font-family: 'ZCOOL XiaoWei', serif;
+    font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-#nav ul{
-    padding: 30px;
-    margin: 50px;
-}
-#nav ul li{
-    display: inline;
-    margin: 50px;
+body {
+    background-color: #f8f9fa;
 }
 
-header{
-    padding: 20px;
+/* Under Construction Banner */
+.wip-banner {
+    background: linear-gradient(90deg, #f39c12, #e74c3c, #f39c12);
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.wip-banner i {
+    margin-right: 8px;
+}
+
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-content .lead {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    opacity: 0.95;
+}
+
+.hero-content .location {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    opacity: 0.85;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links .btn {
+    margin: 5px;
+    border-width: 2px;
+    font-weight: 500;
+}
+
+.social-links .btn:hover {
+    background-color: white;
+    color: #667eea;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #667eea;
+    display: inline-block;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #333;
+    font-weight: 600;
+}
+
+.card-title i {
+    margin-right: 8px;
+    color: #667eea;
+}
+
+/* Skill Tags */
+.skill-tags {
+    margin-top: 15px;
+}
+
+.skill-tags .badge {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    margin: 3px;
+    border-radius: 20px;
+}
+
+/* Specialization Cards */
+.spec-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.spec-card:hover {
+    transform: translateY(-5px);
+}
+
+.spec-card i {
+    font-size: 2.5rem;
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.spec-card p {
+    margin: 0;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Project Cards */
+.project-link {
+    text-decoration: none;
+    display: block;
+}
+
+.project-card {
+    border: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card .card-body {
+    padding: 40px 20px;
+}
+
+.project-card .card-title {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.project-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-icon {
+    color: white;
+    transform: translate(3px, -3px);
+}
+
+/* Stats Box */
+.stat-box {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.stat-box h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    margin: 0;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Achievements */
+.achievements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.achievement-badge {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+/* Footer */
+.footer-section {
+    background: #333;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-section p {
+    margin: 0;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content .lead {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .stat-box h3 {
+        font-size: 1.8rem;
+    }
 }

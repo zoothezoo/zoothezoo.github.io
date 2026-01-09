@@ -3,46 +3,190 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>zoothezoo.github.io</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kohei Ikezu - Mobile Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="shadow-lg p-0 mb-5 bg-white rounded">
-            <div class="row">
-                <div class="col-12 px-0">
-                    <nav class="navbar navbar-dark bg-primary">
-                        <h1>zoothezoo.github.io</h1>
-                    </nav>
+    <!-- Under Construction Banner -->
+    <div class="wip-banner">
+        <i class="fas fa-tools"></i> Under Construction
+    </div>
+
+    <div class="container-fluid px-0">
+        <!-- Header -->
+        <header class="hero-section">
+            <div class="hero-content">
+                <h1>Kohei Ikezu</h1>
+                <p class="lead">Mobile Engineer @ Tapple, Inc. (CyberAgent Group)</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Japan</p>
+                <div class="social-links">
+                    <a href="https://github.com/zoothezoo" target="_blank" class="btn btn-outline-light">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://x.com/times_zoothezoo" target="_blank" class="btn btn-outline-light">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </a>
                 </div>
             </div>
-        </div>
+        </header>
 
-        <main>
-            <section>
-                <h2>PROFILE <span class="badge badge-secondary">New</span></h2>
-                <h3> university</h3>
-                Meiji University
+        <main class="container py-5">
+            <!-- Skills Section -->
+            <section class="mb-5">
+                <h2 class="section-title">Skills</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-code"></i> Languages</h5>
+                                <div class="skill-tags">
+                                    <span class="badge badge-primary">Kotlin</span>
+                                    <span class="badge badge-primary">Dart</span>
+                                    <span class="badge badge-primary">Java</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title"><i class="fas fa-tools"></i> Frameworks & Tools</h5>
+                                <div class="skill-tags">
+                                    <span class="badge badge-success">Android</span>
+                                    <span class="badge badge-success">Jetpack Compose</span>
+                                    <span class="badge badge-success">Flutter</span>
+                                    <span class="badge badge-success">Firebase</span>
+                                    <span class="badge badge-success">GitHub Actions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section>
-                <h2>PORTFOLIO</h2>
+
+            <!-- Specializations Section -->
+            <section class="mb-5">
+                <h2 class="section-title">Specializations</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-3">
+                        <div class="spec-card">
+                            <i class="fab fa-android"></i>
+                            <p>Android/Flutter Development</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3">
+                        <div class="spec-card">
+                            <i class="fas fa-layer-group"></i>
+                            <p>MVVM & Clean Architecture</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3">
+                        <div class="spec-card">
+                            <i class="fas fa-cubes"></i>
+                            <p>Multi-module Architecture</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-3">
+                        <div class="spec-card">
+                            <i class="fas fa-mobile-alt"></i>
+                            <p>Cross-platform Development</p>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section>
-                <h2>STUDY</h2>
-                nurseschedling
-                <botton type="button" class="btn btn-success">Success</botton>
+
+            <!-- Projects Section -->
+            <section class="mb-5">
+                <h2 class="section-title">Projects</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <a href="https://tapple.me/" target="_blank" class="project-link">
+                            <div class="card project-card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-0">tapple</h5>
+                                    <i class="fas fa-external-link-alt project-icon"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="https://koigram.net/" target="_blank" class="project-link">
+                            <div class="card project-card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-0">Koigram</h5>
+                                    <i class="fas fa-external-link-alt project-icon"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="https://koigram.net/koichara/" target="_blank" class="project-link">
+                            <div class="card project-card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title mb-0">Koiキャラメーカー</h5>
+                                    <i class="fas fa-external-link-alt project-icon"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GitHub Stats Section -->
+            <section class="mb-5">
+                <h2 class="section-title">GitHub Stats</h2>
+                <div class="row text-center">
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="stat-box">
+                            <h3>18</h3>
+                            <p>Repositories</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="stat-box">
+                            <h3>90</h3>
+                            <p>Stars</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="stat-box">
+                            <h3>28</h3>
+                            <p>Followers</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-3">
+                        <div class="stat-box">
+                            <h3>42</h3>
+                            <p>Following</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section class="mb-5">
+                <h2 class="section-title">GitHub Achievements</h2>
+                <div class="achievements">
+                    <span class="badge badge-warning achievement-badge">Pair Extraordinaire x3</span>
+                    <span class="badge badge-warning achievement-badge">Pull Shark x4</span>
+                    <span class="badge badge-warning achievement-badge">YOLO</span>
+                    <span class="badge badge-warning achievement-badge">Quickdraw</span>
+                    <span class="badge badge-warning achievement-badge">Arctic Code Vault Contributor</span>
+                </div>
             </section>
         </main>
 
-        <footer>
-            <small>Copyright © 2019 zoothezoo</small>
-            <br>
-            thanks for coming
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="container">
+                <p>&copy; 2024 Kohei Ikezu (zoothezoo)</p>
+            </div>
         </footer>
     </div>
 </body>
